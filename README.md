@@ -18,3 +18,5 @@ Authors:
 ### Single-player AI player* (at any time you can switch to autoplay mode)
 
 ## Used languages and technologies
+
+## Upcoming Features
