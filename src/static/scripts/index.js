@@ -1,3 +1,3 @@
 (function initialize() {
-  console.log("initialize");
+    console.log("initialize");
 })();

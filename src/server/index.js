@@ -6,43 +6,43 @@ const { Server } = require("socket.io");
 const { serverStaticFiles } = require("../api");
 
 const configureExpressApp = () => {
-  const app = express();
+    const app = express();
 
-  app.use(cors()).use(express.static(path.join(__dirname, "../static")));
+    app.use(cors()).use(express.static(path.join(__dirname, "../static")));
 
-  app.get("/", serverStaticFiles);
+    app.get("/", serverStaticFiles);
 
-  return app;
+    return app;
 };
 
 const configureSockets = (server) => {
-  const io = new Server(server);
+    const io = new Server(server);
 
-  io.on("connection", (socket) => {
-    console.log("a user connected");
-  });
+    io.on("connection", (socket) => {
+        console.log("a user connected");
+    });
 
-  return io;
+    return io;
 };
 
 const startApp = (app, config) => {
-  app.listen(config.port, (err) => {
-    if (err) {
-      console.error(err);
-      return;
-    }
-    console.log(`Server is listening on :${config.port}`);
-  });
+    app.listen(config.port, (err) => {
+        if (err) {
+            console.error(err);
+            return;
+        }
+        console.log(`Server is listening on :${config.port}`);
+    });
 };
 
 const startServer = (config) => {
-  const app = configureExpressApp();
-  const server = http.createServer(app);
-  const io = configureSockets(server);
+    const app = configureExpressApp();
+    const server = http.createServer(app);
+    const io = configureSockets(server);
 
-  startApp(app, config);
+    startApp(app, config);
 };
 
 module.exports = {
-  startServer,
+    startServer,
 };

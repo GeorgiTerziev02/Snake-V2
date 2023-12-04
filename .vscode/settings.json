@@ -1,0 +1,19 @@
+{
+  "editor.detectIndentation": false,
+  "editor.tabSize": 4,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "extensions.ignoreRecommendations": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.inlineSuggest.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false
+}
