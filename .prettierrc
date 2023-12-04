@@ -1,0 +1,29 @@
+{
+  "endOfLine": "crlf",
+  "trailingComma": "es5",
+  "overrides": [
+    {
+      "excludeFiles": ["./src/static/external/*"]
+    },
+    {
+      "files": ["*.html"],
+      "options": {
+        "tabWidth": 2
+      }
+    },
+    {
+      "files": ["src/**/*.js"],
+      "options": {
+        "singleQuote": false,
+        "bracketSpacing": true,
+        "printWidth": 80,
+        "tabWidth": 4,
+        "useTabs": false,
+        "semi": true,
+        "bracketSameLine": true,
+        "arrowParens": "always",
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "snake-v2",
+  "version": "1.0.0",
+  "description": "Web-based game \"Snake\";",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "npx prettier . --write",
+    "lint": "eslint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Tsvetelina Tsvetanova, Georgi Terziev",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "prettier": "3.1.0"
+  }
+}
