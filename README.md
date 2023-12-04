@@ -11,6 +11,13 @@ Authors:
 - [Tsvetelina Tsvetanova](https://github.com/tswetti) 
 - [Georgi Terziev](https://github.com/GeorgiTerziev02)
 
+## How to use
+
+```
+npm install nodemon --global
+npm start
+```
+
 ## Functionalities
 
 ### Single-player snake
