@@ -3,7 +3,7 @@
   "trailingComma": "es5",
   "overrides": [
     {
-      "excludeFiles": ["./src/static/public/*"]
+      "excludeFiles": ["./src/static/external/*"]
     },
     {
       "files": ["*.html"],

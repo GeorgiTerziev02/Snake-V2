@@ -9,6 +9,6 @@
   "parserOptions": {
     "ecmaVersion": "latest"
   },
-  "ignorePatterns": ["src/static/public/*"],
+  "ignorePatterns": ["src/static/external/*"],
   "rules": {}
 }

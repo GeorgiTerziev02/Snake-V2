@@ -1,4 +1,4 @@
 const config = require("./config/config.json");
-const { startServer } = require("./server");
+const { runApplication } = require("./server");
 
-startServer(config);
+runApplication(config);
