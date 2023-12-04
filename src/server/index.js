@@ -19,7 +19,7 @@ const configureSockets = (server) => {
     const io = new Server(server);
 
     io.on("connection", (socket) => {
-        console.log("a user connected");
+        console.log("a user connected", socket);
     });
 
     return io;
@@ -38,7 +38,7 @@ const startApp = (app, config) => {
 const startServer = (config) => {
     const app = configureExpressApp();
     const server = http.createServer(app);
-    const io = configureSockets(server);
+    configureSockets(server);
 
     startApp(app, config);
 };
