@@ -4,6 +4,7 @@
   "description": "Web-based game \"Snake\";",
   "main": "index.js",
   "scripts": {
+    "prettier": "npx prettier . --write",
     "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./src/index.js"
