@@ -20,13 +20,15 @@ const configureSockets = (server) => {
 
     io.on("connection", (socket) => {
         console.log("a user connected", socket);
+
+        io.emit("message", "Hello from server");
     });
 
     return io;
 };
 
-const startApp = (app, config) => {
-    app.listen(config.port, (err) => {
+const _startServer = (server, config) => {
+    server.listen(config.port, (err) => {
         if (err) {
             console.error(err);
             return;
@@ -40,7 +42,7 @@ const startServer = (config) => {
     const server = http.createServer(app);
     configureSockets(server);
 
-    startApp(app, config);
+    _startServer(server, config);
 };
 
 module.exports = {

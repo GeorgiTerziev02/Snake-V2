@@ -3,6 +3,9 @@
   "trailingComma": "es5",
   "overrides": [
     {
+      "excludeFiles": ["./src/static/public/*"]
+    },
+    {
       "files": ["*.html"],
       "options": {
         "tabWidth": 2
